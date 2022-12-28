@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="আপনি জপ করেছেন"
+        android:gravity="center"
+        android:textSize="25sp"
+        />
+
+
+
+    <LinearLayout
+        android:layout_below="@id/tvView"
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reset"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:onClick="resetPreference"
+            />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+
+            />
+    </LinearLayout>
+    <Button
+        android:layout_below="@id/layout"
+        android:id="@+id/buttonAdd"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ক্লিক করে জপ করুন"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:longClickable="true"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+
+        />
+
+</RelativeLayout>
